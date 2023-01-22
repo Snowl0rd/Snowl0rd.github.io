@@ -1,3 +1,4 @@
-li {
-    background-color: black;
+body {
+    background-image:url("фон.png");
+    background-size: auto
 }
