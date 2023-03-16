@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Проект "Шифры"</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="3.png">
+    <link rel="icon" href="Icon.png">
 </head>
 <body>
 
@@ -25,7 +25,19 @@
     <p><i>«Если у него было что-либо конфиденциальное для передачи, то он записывал это шифром, то есть так изменял порядок букв алфавита, что нельзя было разобрать ни одно слово. Если кто-либо хотел дешифровать его и понять его значение, то он должен был подставлять четвертую букву алфавита, а именно, D, для A, и так далее, с другими буквами.
     Гай Светоний Транквилл Жизнь двенадцати цезарей, Книга первая, гл. 56[3]»</i></p>
     
-    <img src="https://fikiwiki.com/uploads/posts/2022-02/1644966468_43-fikiwiki-com-p-kartinki-yulii-tsezar-45.jpg" width=auto>
+    <script>
+        var alphabet = ['а', 'б', 'в', 'г', 'д', 'е', 'ё', 'ж', 'з', 'и', 'й', 'к', 'л', 'м', 'н', 'о', 'п', 'р', 'с', 'т', 'у', 'ф', 'х', 'ц', 'ч', 'ш', 'щ' ,'ъ', 'ы', 'ь', 'э', 'ю', 'я']
+        function translate() {
+            var x = Document.getElementById('before')
+            for (k=1; k = x.length-1;k++);
 
+
+            
+        }
+        </script>
+         
+        <input type="text" id="before" />
+        <input type="text" id="after" readonly/>
+        <input type="button" value="Перевести" onclick="translate()" />
 </body>
 </html>
