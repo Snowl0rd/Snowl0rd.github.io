@@ -30,3 +30,27 @@ body {
       border-radius: 20px 5px;
       background-color: #1a4585;
     }
+    @import 'https://fonts.googleapis.com/css?family=Open+Sans';
+
+* {
+  box-sizing: border-box;
+}
+
+input {
+  padding: 10px;
+  border: 0px;
+  outline: 0;
+  border-bottom: 2px solid rgba(212, 16, 16, 0.6);
+  background-color: transparent;
+  color: black;
+  text-align: center;
+  font-size: 22px;
+  transition: border-bottom 300ms ease-in-out;
+  
+  &:focus {
+    border-bottom: 2px solid white  
+  }
+}
+#output {
+  font-size: 30px;
+}
