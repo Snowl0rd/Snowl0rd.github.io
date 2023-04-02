@@ -40,7 +40,7 @@ input {
   padding: 10px;
   border: 0px;
   outline: 0;
-  border-bottom: 2px solid rgba(212, 16, 16, 0.6);
+  border-bottom: 2px solid rgb(212, 16, 16);
   background-color: transparent;
   color: black;
   text-align: center;
