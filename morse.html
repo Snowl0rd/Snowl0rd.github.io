@@ -7,6 +7,7 @@
     <title>Проект "Шифры"</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="Icon.png">
+    <script src="texttomorse.js"></script>
 </head>
 <body>
 
@@ -25,20 +26,18 @@
 
         В отличие от первых телеграфных аппаратов стрелочного типа с довольно ненадежной передачей информации, которая часто производилась посредством сложных для того времени, многопроводных линий связи и с небольшими скоростями (порядка 25 слов в час), аппарат Морзе позволил в 10 раз повысить скорость передачи, применяя при этом только один сигнальный провод (вторым могла служить земля) и ведя автоматическое документирование в виде записи сигнала на бумажную ленту. Аппарат состоял из телеграфного ключа, которым телеграфист вручную модулировал ток в линии и приемного пишущего устройства, протягивающего перед иглой или валиком с краской бумажную ленту. Под действием электромагнита, подключенного к линии, валик прижимался к бумаге, оставляя на ней следы разной длительности, которыми, посредством азбуки Морзе, кодировалось переданное сообщение.</p>
 
-        <div div id="result"></div>
-
-        <script src="texttomorse.js"></script>
+        <label for="textInput">Введите текст:</label>
+        <input type="text" id="textInput">
+        <button onclick="getText()">Перевести</button>
+        <p id="result"></p>
+      
         <script>
-        var inputText = "your text here";
-        var morseCode = textToMorse(inputText);
-        var outputDiv = document.getElementById("output");
-        var resultDiv = document.createElement("div");
-        resultDiv.innerText = morseCode;
-        outputDiv.appendChild(resultDiv);
-        resultDiv.innerText = morseCode;;
+          function getText() {
+            const input = document.getElementById("textInput").value;
+            const morse = textToMorse(input);
+            const resultElement = document.getElementById("result");
+            resultElement.textContent = morse;
+          }
         </script>
-        <input type="text" id="input">
-        <button onclick="translateText()">Преобразовать</button>
-        <div id="output"></div>
 </body>
 </html>
