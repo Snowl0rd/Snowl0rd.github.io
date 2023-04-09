@@ -40,13 +40,13 @@
 
     <label for="textInput">Введите текст:</label>
     <input type="text" id="textInput" oninput="updateResult()">
-    <output id="result" style="font-size: larger;"></output>
+    <div id="output"></div>
 
     <script>
         function updateResult() {
             const input = document.getElementById("textInput").value;
             const morse = textToMorse(input);
-            const resultElement = document.getElementById("result");
+            const resultElement = document.getElementById("output");
             resultElement.textContent = morse;
         }
     </script>
