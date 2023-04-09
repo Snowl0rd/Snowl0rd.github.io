@@ -16,5 +16,4 @@ function textToMorse(text) {
   };
   const morseCode = text.toLowerCase().split('').map(char => morseChars[char] || char).join(' ');
   return morseCode;
-  return morseCode;
 }
