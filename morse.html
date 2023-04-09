@@ -39,16 +39,15 @@
         которыми, посредством азбуки Морзе, кодировалось переданное сообщение.</p>
 
     <label for="textInput">Введите текст:</label>
-    <input type="text" id="textInput">
-    <button onclick="getText()">Перевести</button>
-    <p id="result"></p>
+    <input type="text" id="textInput" oninput="updateResult()">
+    <output id="result"></output>
 
     <script>
-        function getText() {
+        function updateResult() {
             const input = document.getElementById("textInput").value;
             const morse = textToMorse(input);
             const resultElement = document.getElementById("result");
-            resultElement.innerHTML = morse;
+            resultElement.textContent = morse;
         }
     </script>
 </body>
