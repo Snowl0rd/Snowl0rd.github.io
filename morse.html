@@ -8,6 +8,17 @@
     <title>Проект "Шифры"</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="Icon.png">
+        <style>
+            .jumbotron pre {
+                background-color: #f0f0f0;
+                margin-top: 30px;
+                padding: 15px;
+                border-radius: 10px;
+                border: 1px solid #d0d0d0;
+                font-size: 18px;
+                line-height: 1.5;
+            }
+        </style>
     <script src="texttomorse.js"></script>
 </head>
 
@@ -18,11 +29,8 @@
         <li><a href="rot-x.html">ROT-X</a></li>
         <li><a href="morse.html">Азбука Морзе</a></li>
         <li><a href="replace.html">Шифрование заменой</a></li>
+        <li><a href="titul.html">Контакты</a></li>
     </ul>
-
-    <p style="text-align: right"> Выполнил:</p>
-    <p style="text-align: right;">Ученик 11Б класса</p>
-    <p style="text-align: right"> Тараканов Д. Д.</p>
 
     <p>Азбука Морзе была создана изобретателями Сэмюэлем Морзе (Samuel Finley Breese Morse 1791-1872), Альфредом Вейлем
         и Джозефом Генри в 1838 году для изобретенного ими телеграфного аппарата, получившего название аппарат Морзе.
@@ -38,9 +46,11 @@
         электромагнита, подключенного к линии, валик прижимался к бумаге, оставляя на ней следы разной длительности,
         которыми, посредством азбуки Морзе, кодировалось переданное сообщение.</p>
 
-    <label for="textInput">Введите текст:</label>
+    <h2>Шифратор:</h2>
+    <p>Введите текст сюда:</p>
     <input type="text" id="textInput" oninput="updateResult()">
-    <div id="output"></div>
+    <p>И получите его на азбуке Морзе!</p>
+    <div id="output" class="jumbotron"></div>
 
     <script>
         function updateResult() {
