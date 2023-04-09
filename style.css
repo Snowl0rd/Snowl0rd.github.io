@@ -54,3 +54,8 @@ input {
 #output {
   font-size: 30px;
 }
+footer {
+  background-image: url(uzor.png);
+  background-repeat: repeat;
+  background-size: 100px 100px;
+}
