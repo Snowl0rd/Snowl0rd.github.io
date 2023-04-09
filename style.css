@@ -52,17 +52,5 @@ input {
   }
 }
 #output {
-  padding: 10px;
-  border: 0px;
-  outline: 0;
-  border-bottom: 2px solid rgb(212, 16, 16);
-  background-color: transparent;
-  color: black;
-  text-align: center;
-  font-size: 22px;
-  transition: border-bottom 300ms ease-in-out;
-  
-  &:focus {
-    border-bottom: 2px solid white  
-  }
+  font-size: 30px;
 }
