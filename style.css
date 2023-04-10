@@ -1,6 +1,8 @@
 body {
    background-image: url(pattern-multi-hexagons.png);
    font-family: sans-serif;
+   padding-bottom: 50px; /* добавляет отступ 50px от нижнего края body */
+
 }
 #navbar {
    margin: 0;
